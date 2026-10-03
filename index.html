@@ -333,7 +333,15 @@
 
         async function initFirebase() {
             try {
-                const firebaseConfigStr = typeof __firebase_config !== 'undefined' ? __firebase_config : null;
+               const firebaseConfig = {
+  apiKey: "AIzaSyAKHkkNEwytlpMQm91ZqrESa33W0YkTYUY",
+  authDomain: "nabatcm-center.firebaseapp.com",
+  projectId: "nabatcm-center",
+  storageBucket: "nabatcm-center.firebasestorage.app",
+  messagingSenderId: "437081478660",
+  appId: "1:437081478660:web:ea4a4f2b594ec708c44751",
+  measurementId: "G-B5EZ197G5J"
+};
                 if (firebaseConfigStr) {
                     const firebaseConfig = JSON.parse(firebaseConfigStr);
                     appId = typeof __app_id !== 'undefined' ? __app_id : 'nabatcm-app-123';
